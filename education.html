@@ -1,0 +1,154 @@
+<?php
+	require 'connect.inc.php';
+	require 'core.inc.php';
+	
+	$comment_post=NULL;
+	$topic_name=null;
+	$date_post=null;
+	$post=null;
+	global $topic1;
+	$topic=4;
+	
+	
+	include 'edufunction.php';
+	include 'comment.php';
+	
+	
+
+?>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Education</title>
+<link href="blog.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<div id="background">
+	<div id="page">
+				<div id="header">
+					<div id="logo"><a href="index.php"><img src="images/logo1.png" alt="LOGO" height="70" width="90px"></a></div>
+						<div id="navigation">
+							<ul>
+							<li>
+							<a href="index.php">Home</a>
+							</li>
+							<li class="selected">
+							<a href="education.php">Education</a>
+							</li>
+							<li>
+							<a href="#">Government</a></li>
+							<li><a href="#">Politics</a> </li>
+							<li>
+							<a href="#">Lifestyle</a>
+							</li>
+							<li>
+							<a href="#">About</a>
+							</li>
+							<li>
+							<a href="login.php">Login</a></li>
+                            </ul>
+							
+							
+						</div>
+				</div>
+		<?php
+
+	$topic=4;
+	?>
+        
+		 
+		<div id="edupage">
+		
+			<div id="eduposts">
+					<h3>Education blogs</h3>
+					<h4>Topics</h4>
+				<div>
+					<img src="images/edu1.png" height="200" width="500">
+				</div>
+				<div id="educontent">
+							<div class='contentsize'>
+								<div>
+									<p>
+									<?php
+									
+									page();
+									?>
+									</p>
+								</div>
+							</div>
+										<!--commments-->
+								<div id='comment'>
+									
+									<?php
+									commentpost($topic);
+									?>
+									fkdfkdkfd
+								</div>
+								<div id='message'>
+								<!--<?php echo "$comment_post" ?>-->
+							
+								</div>
+					
+								<div>
+									<span>comment<span><br>
+									<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+									<textarea id="commenting" name='comment' row="5" cols="8">
+									
+									</textarea>
+									<br>
+				
+									<input type="submit" value="Comment"  />
+									<input type="reset" name="clear" value="Clear" />
+									</form>
+									
+								</div>
+				
+			
+				</div>
+				
+
+			</div>
+		
+			<div id="edusidebar">
+					<h3>Stories<h3>
+					<ul>
+					
+					<?php
+					
+					themestories('Education');
+					?>
+						<!--<li><a href="#">How To Manage Time Effectively</a></li>
+						<li><a href="#">How Succeeded in Exams</a></li>
+						<li><a href="#">How To Avoid Procrastination</a></li>
+						<li><a href="#">Am Giant For Sure</a></li>
+						<li><a href="#">Positive Effects of Social Media to students</a></li>
+						<li><a href="#">Do nothing for nothing</a></li>
+						-->
+					
+					
+					
+					</ul>
+			</div>	
+				
+		</div>
+		<hr>
+	</div>	
+	
+	<div id="footer">
+            
+                 <footer>All Rights Reserved By BlogPost</footer>
+
+	</div>
+	
+		 
+</div>	
+<script type="text/javascript" src="js/JQuery.js" ></script> 
+<script type="text/javascript" src="js/script.js" ></script> 
+
+
+</body>
+</html>
+

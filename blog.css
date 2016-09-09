@@ -1,0 +1,344 @@
+
+body
+{
+background:url(images/bg-pattern.jpg);
+margin: 0;
+height:auto;
+}
+
+/*blog page*/
+
+#background
+{
+	background: url(images/bg-pattern.jpg) repeat-x center top;
+	min-height: auto;
+
+}
+#page
+{
+	width:980px;
+	margin:0 auto;
+	margin-bottom:20px;
+	height: auto;
+	overflow:hidden;
+	
+}
+#header
+{
+
+	margin-bottom:30px;
+	padding-top:20px;
+}
+#logo
+{
+	margin-top:0px;
+	margin-bottom:5px;
+	border:6px solid #008080;
+	height:70px;
+	width:90px;
+	border-radius:10px 5px;
+
+
+}
+
+#navigation
+{
+	width:980px;
+	height:20px;
+	padding:0;
+	clear:both;
+	margin: 0 auto;
+	
+
+}
+#navigation ul
+{
+	list-style-type:none;
+	display:inline-block;
+	width:980px;
+	margin: 0;
+	padding: 0;
+	
+		
+}
+#navigation li
+{
+	float: left;
+	background-color: #008080;
+	height: 50px;
+	width: 134px;
+	margin: 0;
+	padding-right: 0px;
+	text-align: centre;
+	border:3px solid  #008080;
+	border-radius: 2px 2px;
+
+	
+}
+#navigation a
+{
+	color:  #fff;
+	display: block;
+	font: bold 14px/48px Arial, Helvetica, sans-serif;
+	height: 49px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#navigation li a:hover {
+	background-color: #AA9F55;
+	color: #2A0000;
+	/*background-color:#CCC;
+	color: #09C;*/
+}
+
+
+#navigation li.selected a {
+	color:#FC9;
+
+}
+
+#slideshow
+{
+margin: 45px 10px 55px 55px;
+width: 980px;
+padding:0px;
+height:200px;
+width:852px;
+border:0;
+
+}
+
+		
+
+#content
+{
+float:left;
+display:block;
+width:460px;
+height:400px;
+text-align:left;
+padding-left:4px;
+margin:5px 10px;
+background-image:url(images/bg-adbox.png);
+color:#30F;
+border-radius:40px 0px 40px;
+overflow:hidden;
+	
+}
+#content ul, #contentside ul
+{
+list-style-type:none;	
+	
+}
+
+#contentpost
+{	
+	height:180px;
+	overflow:hidden;
+}
+
+
+#contentside
+{
+	float:left;
+	display:block;
+	width: 460px;
+	height:400px;
+	text-align:left;
+	padding-left:4px;
+	margin:5px 10px;
+	margin-right: 0px;
+	background-image:url(images/bg-adbox.png);
+	color:black;
+	border-radius:40px 0px 40px;
+
+}
+#dailypost
+{
+	text-align:justify;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	display:block;
+	width:920px;
+	padding:15px;
+	margin-left: 200px;
+	height:300px;
+	overflow:hidden;
+	border: 3px solid #FC9;
+	background-color:#FC9;
+	border-radius: 0px 40px;	
+}
+#dailypost1
+{
+	height:150px;
+	display:block;
+	border:1px solid #008080;
+	overflow:hidden;
+	
+
+}
+
+#dailypost h3
+{
+	color:#00F;
+}
+#dailypost p
+{
+	padding:10px;
+	font-family:"Times New Romans", Gadget, sans-serif;
+	font-size:14px;
+
+
+}
+#footer
+{	
+	text-align:center;
+	font-family:"Courier New", Courier, monospace;
+	background-color:#008080;
+	border-radius:10px 10px;
+	width:980px;
+	height:30px;
+	padding:5px;
+	padding-top:10px;
+	margin-left:180px;
+	margin-top:15px;
+	
+	
+	
+	
+}
+/*login*/
+#login
+{
+	float:right;
+	width: 450px;
+	height:0;
+	margin:3px;
+	padding:3px;
+	display:block;
+
+}
+#postside
+{
+	float: right;
+	width:250px;
+	display:block;
+	height: 650px;
+	margin:3px;
+	padding:3px;
+	border:inset;
+	border:10px solid #008080;
+	border-radius:0px 20px;
+
+
+}
+fieldset
+{
+	border-radius: 0px 10px 30px;
+	border: groove;
+	padding:3px;
+	margin-top:50px;
+	margin-bottom: 5px;
+	width:400px;
+	border-width:10px;
+	border-color:#008080;
+
+
+}
+/* education*/
+#edupage
+{
+	width: 980px;
+	height: auto;
+	margin:0;
+	
+
+
+}
+#eduposts
+{
+	width: 750px;
+	height: auto;
+	display: block;
+	float:left;
+	margin-top:30px;
+	background-color:#fff;
+	text-align: left;
+	padding: 3px;
+	
+}
+#educontent
+{
+	padding: 10px;
+	margin: 15px;
+	display:block;
+	
+	
+
+}
+.contentsize
+{
+	height:300px;
+	overflow:scroll;
+
+
+
+}
+#edusidebar
+{
+	float:right;
+	display:block;
+	width: 200px;
+	height: 1200px;
+	background-color:#fff;
+	margin:30px 0 5px 0;
+	padding: 5px;
+	
+	
+}
+
+
+
+textarea
+{
+width:600px;
+height:auto;
+margin-left:50px;
+
+}
+
+#comment
+{
+	display:block;
+	background-color:#FC9;
+	width: 650px;
+	margin:3px;
+	padding:4px;
+	border:5px solid #FC9;
+	border-radius: 0px 15px 10px;
+
+}
+
+#comment span
+{
+font-family: san-serif;
+font-size:9pt;
+font-color:cyan;
+text-align:right;
+
+}
+#commentpost
+{
+height:300px;
+width:700px;
+overflow:scroll;
+
+}
+#logout  a
+{
+	text-decoration:none;
+	color:brown;
+	font-size:14pt;
+
+}
+
